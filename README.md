@@ -40,7 +40,7 @@ This system acts as a counterpart to the [Market Neutral Requester](https://gith
   
 - **Proposal**:
   - **Endpoint**: Define the API endpoint for proposal submissions. Used by market router when requester calls `completions` endpoint in order to obtain OpenAI wrapper response.
-  - **Max Bid**: Determines the maximum bid amount for proposals. If set to None, a GPT 3.5 model will decide the appropriate bid based on the instance's background. This part of the configuration directly impacts the economic considerations of the proposals.
+  - **Max Bid**: Determines the maximum bid amount for proposals. If set to None, a gpt-4o-mini model will decide the appropriate bid based on the instance's background. This part of the configuration directly impacts the economic considerations of the proposals.
 
 These configuration variables are stored in the config file, ensuring the Market Neutral Provider can effectively interact with the Market router by managing its proposals and financial transactions.
 
