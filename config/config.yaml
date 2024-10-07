@@ -1,0 +1,13 @@
+# General Configuration
+web_port: 80
+
+# Market router Configuration
+market_router_url: "https://api.marketrouter.ai"
+deposit_amount: 1
+
+# Proposal Configuration
+endpoint: "" # Endpoint for proposal
+max_bid: 0.02 
+
+# Scheduler Configuration
+proposal_interval: 5

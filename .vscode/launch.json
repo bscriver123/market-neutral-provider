@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Model Response",
+            "type": "python",
+            "request": "launch",
+            "module": "api.services.model_response",
+            "justMyCode": true,
+            "args": ["--model_args={\"messages\": [{\"role\": \"user\", \"content\": \"Say this is a test\"}], \"model\": \"gpt-3.5-turbo\", \"temperature\": 0.5}"]
+        },
+                {
+            "name": "Register User",
+            "type": "python",
+            "request": "launch",
+            "module": "market_router.scripts.register",
+            "justMyCode": true,
+        },
+        {
+            "name": "Create API Key",
+            "type": "python",
+            "request": "launch",
+            "module": "market_router.scripts.api_key",
+            "justMyCode": true,
+        },
+        {
+            "name": "Deposit",
+            "type": "python",
+            "request": "launch",
+            "module": "market_router.scripts.deposit",
+            "justMyCode": true,
+        },
+        {
+            "name": "Create Proposal",
+            "type": "python",
+            "request": "launch",
+            "module": "market_router.scripts.proposal",
+            "justMyCode": true,
+        }
+        
+    ]
+}
