@@ -7,6 +7,9 @@
 
 This system acts as a counterpart to the [Market Neutral Requester](https://github.com/GroupLang/neutral-portfolio-requester), focusing on analyzing sector-specific news to generate actionable insights for stock decisions. It utilizes the [Market router API](https://marketrouter.ai/) for all interactions and integrates with an OpenAI completions endpoint to process news inputs supplied by the requester, subsequently generating investment recommendations.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9b29a7bc-5b89-4c67-9336-2249f0569d00" alt="MarketNeutral (10)" width="500">
+</p>
 
 ## Installation
 
