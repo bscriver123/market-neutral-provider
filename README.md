@@ -38,7 +38,7 @@ This system acts as a counterpart to the [Market Neutral Requester](https://gith
 ## Configuration
 
 - **Market router**:
-  - **Username, Fullname, Email, Password**: These credentials are used for authentication and identification in the market router. If the user is already registered, these parameters are not necessary; instead, add the Market router API key to the `.env` file as `MARKET_ROUTER_API_KEY`.
+  - **Username, Fullname, Email, Password**: These credentials are used for authentication and identification in the market router. If the user is already registered, these parameters are not necessary; instead, add the Market router API key to the `.env` file as `MARKET_ROUTER_API_KEY`
   - **Deposit Amount**: Specify the initial deposit amount for transactions in the market router if needed.
   
 - **Proposal**:
