@@ -54,7 +54,7 @@ These configuration variables are stored in the config file, ensuring the Market
    ```shell
    python -m market_router.scripts.register
    ```
-   This command registers a new user with the Market router API. If a `MARKET_ROUTER_API_KEY` exists (indicating prior registration), this script is unnecessary.
+   This command registers a new user with the Market router API. If `MARKET_ROUTER_API_KEY` exists (indicating prior registration), this script is unnecessary.
 
 2. **Create API Key Script**
    ```shell
