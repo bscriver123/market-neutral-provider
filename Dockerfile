@@ -16,6 +16,9 @@ RUN apt-get update \
 RUN pip install --upgrade pip
 COPY ./requirements.txt /backend/
 RUN pip install -r requirements.txt
+
+# install playwright and its dependencies
+RUN pip install playwright && playwright install
  
 # Copy project
 COPY . /backend/
