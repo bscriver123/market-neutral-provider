@@ -80,3 +80,33 @@ These configuration variables are stored in the config file, ensuring the Market
    python -m api.services.model_response --model_args='{"messages": [{"role": "user", "content": "Test OpenAI Wrapper"}], "model": "gpt-3.5-turbo", "temperature": 0.5}'
    ```
    This command generates simulated responses from the model, designed to test the API's capability to process and respond to input accurately under controlled settings.
+
+## Analytics
+
+The system includes an analytics module that tracks proposals using an in-memory SQLite database. This module provides functions to add proposals and retrieve analytics data.
+
+### Usage
+
+1. **Add a Proposal**
+   ```python
+   from analytics import add_proposal
+
+   add_proposal(instance_id="1234", proposal_details="Sample proposal details")
+   ```
+
+2. **Get Proposal Count**
+   ```python
+   from analytics import get_proposal_count
+
+   count = get_proposal_count()
+   print(f"Total proposals: {count}")
+   ```
+
+3. **Retrieve All Proposals**
+   ```python
+   from analytics import get_all_proposals
+
+   proposals = get_all_proposals()
+   for proposal in proposals:
+       print(proposal)
+   ```
