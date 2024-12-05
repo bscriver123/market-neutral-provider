@@ -7,6 +7,20 @@
 
 This system acts as a counterpart to the [Market Neutral Requester](https://github.com/GroupLang/neutral-portfolio-requester), focusing on analyzing sector-specific news to generate actionable insights for stock decisions. It utilizes the [Market router API](https://marketrouter.ai/) for all interactions and integrates with an OpenAI completions endpoint to process news inputs supplied by the requester, subsequently generating investment recommendations.
 
+## Features
+
+- Analyze sector-specific news to generate stock insights.
+- Integrate with OpenAI for processing news inputs.
+- Interact with Market router API for proposal submissions and user management.
+- Automated proposal creation and submission based on market analysis.
+
+## Usage
+
+1. **Register a User**: Use the register script to create a new user in the Market router.
+2. **Create an API Key**: Generate an API key for authenticating requests.
+3. **Deposit Funds**: Deposit funds into the Market router account.
+4. **Submit Proposals**: Automatically submit proposals based on market analysis.
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/9b29a7bc-5b89-4c67-9336-2249f0569d00" alt="MarketNeutral (10)" width="500">
 </p>
@@ -38,7 +52,7 @@ This system acts as a counterpart to the [Market Neutral Requester](https://gith
 ## Configuration
 
 - **Market router**:
-  - **Username, Fullname, Email, Password**: These credentials are used for authentication and identification in the market router. If the user is already registered, these parameters are not necessary; instead, add the Market router API key to the `.env` file as `MARKET_ROUTER_API_KEY`
+  - **Username, Fullname, Email, Password**: These credentials are used for authentication and identification in the market router. If the user is already registered, these parameters are not necessary; instead, add the Market router API key to the `.env` file as `MARKET_ROUTER_API_KEY`.
   - **Deposit Amount**: Specify the initial deposit amount for transactions in the market router if needed.
   
 - **Proposal**:
@@ -46,6 +60,15 @@ This system acts as a counterpart to the [Market Neutral Requester](https://gith
   - **Max Bid**: Determines the maximum bid amount for proposals. If set to None, a gpt-4o-mini model will decide the appropriate bid based on the instance's background. This part of the configuration directly impacts the economic considerations of the proposals.
 
 These configuration variables are stored in the config file, ensuring the Market Neutral Provider can effectively interact with the Market router by managing its proposals and financial transactions.
+
+## Contributing
+
+We welcome contributions to enhance the functionality and usability of this project. Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push your branch to your fork.
+4. Submit a pull request with a detailed description of your changes.
 
 ## Key Components and Processes
 
