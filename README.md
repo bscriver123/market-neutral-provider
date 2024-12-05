@@ -3,6 +3,13 @@
 [![Website](https://img.shields.io/badge/Visit-marketrouter.ai-blue)](https://marketrouter.ai)
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/GroupLang.svg?style=social&label=Follow%20%40GroupLang)](https://twitter.com/GroupLang)
 
+## Table of Contents
+1. [Overview](#overview)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Key Components and Processes](#key-components-and-processes)
+5. [Contribution Guidelines](#contribution-guidelines)
+
 ## Overview
 
 This system acts as a counterpart to the [Market Neutral Requester](https://github.com/GroupLang/neutral-portfolio-requester), focusing on analyzing sector-specific news to generate actionable insights for stock decisions. It utilizes the [Market router API](https://marketrouter.ai/) for all interactions and integrates with an OpenAI completions endpoint to process news inputs supplied by the requester, subsequently generating investment recommendations.
@@ -12,6 +19,8 @@ This system acts as a counterpart to the [Market Neutral Requester](https://gith
 </p>
 
 ## Installation
+
+Follow these steps to set up the project on your local machine.
 
 1. **Clone the repository**
 
@@ -38,7 +47,7 @@ This system acts as a counterpart to the [Market Neutral Requester](https://gith
 ## Configuration
 
 - **Market router**:
-  - **Username, Fullname, Email, Password**: These credentials are used for authentication and identification in the market router. If the user is already registered, these parameters are not necessary; instead, add the Market router API key to the `.env` file as `MARKET_ROUTER_API_KEY`
+  - **Username, Fullname, Email, Password**: These credentials are used for authentication and identification in the market router. If the user is already registered, these parameters are not necessary; instead, add the Market router API key to the `.env` file as `MARKET_ROUTER_API_KEY`.
   - **Deposit Amount**: Specify the initial deposit amount for transactions in the market router if needed.
   
 - **Proposal**:
@@ -73,6 +82,15 @@ These configuration variables are stored in the config file, ensuring the Market
    python -m market_router.scripts.proposal
    ```
    This script submits proposals to the Market router using configured `endpoint` and `max_bid` settings, detailing the financial and operational parameters for engagements.
+
+## Contribution Guidelines
+
+We welcome contributions from the community. Please follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them with clear and concise messages.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository.
 
 **API Services Scripts:**
 1. **Model Response Script**
